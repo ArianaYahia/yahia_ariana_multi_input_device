@@ -1,8 +1,8 @@
 while (true) {
     if (input.temperature(TemperatureUnit.Fahrenheit) <= 68 || input.soundLevel() > 100) {
-        music.magicWand.playUntilDone() && light.rainbowAnimation
+        music.magicWand.playUntilDone() && light.showAnimation(light.rainbowAnimation, 100)
     } else {
-        music.stopAllSounds()
+        music.stopAllSounds() && light.clear()
     }
     
 }
