@@ -1,5 +1,5 @@
 while (true) {
-    if (input.temperature(TemperatureUnit.Fahrenheit) < 40 || input.soundLevel() > 100) {
+    if (input.temperature(TemperatureUnit.Celsius) < 5 || input.soundLevel() > 100) {
         music.baDing.playUntilDone()
     } else {
         music.stopAllSounds()
