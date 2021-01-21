@@ -1,6 +1,6 @@
 while (true) {
-    if (input.soundLevel() > 150) {
-        music.baDing.playUntilDone()
+    if (input.temperature(TemperatureUnit.Fahrenheit) < 40 || input.soundLevel() > 150) {
+        music.magicWand.playUntilDone()
     } else {
         music.stopAllSounds()
     }
